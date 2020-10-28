@@ -56,6 +56,11 @@ Rails.application.routes.draw do
 
     get "/", to: "coupon#home"
     get "/coupons", to: "coupon#index"
+    post "/coupons", to: "coupon#create"
+    get "/coupons/new", to: "coupon#new"
+    get "/coupons/:id", to: "coupon#show", as: "coupon"
+    
+    
 
 
 

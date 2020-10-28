@@ -1,0 +1,16 @@
+<h1>Form She-nanigans</h1>
+
+<p>Make your own weed coupon!</p>
+            
+<%=form_tag coupons_path do %>
+<%= label_tag :store, "Store"%>
+<%= text_field_tag :store %><br>
+<%= label_tag :coupon_code, "Coupon Code"%>
+<%= text_field_tag :coupon_code %><br>
+<%= submit_tag "Make ya coup"%>
+
+<%end %>
+
+
+<!--- <%= params.inspect %> --->
+
